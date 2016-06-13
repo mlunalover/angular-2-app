@@ -24,7 +24,8 @@ System.register(['@angular/core'], function(exports_1, context_1) {
                 MyComponentComponent = __decorate([
                     core_1.Component({
                         selector: 'my-component',
-                        template: "\n        Hi I'm {{name}} and this is my very first Angular 2 component! It's so awesome!\n        <br>\n        <br>\n        Is it awesome?\n        <input type=\"text\">\n    "
+                        template: "\n        Hi I'm {{name}} and this is my very first Angular 2 component! <span [class.is-awesome]=\"inputElement.value === 'yes'\">It's so awesome!</span>\n        <br>\n        <br>\n        Is it awesome?\n        <input type=\"text\" #inputElement (keyup)=\"0\">\n    ",
+                        styleUrls: ['src/css/mycomponent.css']
                     }), 
                     __metadata('design:paramtypes', [])
                 ], MyComponentComponent);
@@ -35,4 +36,4 @@ System.register(['@angular/core'], function(exports_1, context_1) {
     }
 });
 
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm15LWNvbXBvbmVudC5jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7WUFZQTtnQkFBQTtnQkFFQSxDQUFDO2dCQVpEO29CQUFDLGdCQUFTLENBQUM7d0JBQ1AsUUFBUSxFQUFFLGNBQWM7d0JBQ3hCLFFBQVEsRUFBRSxvTEFNVDtxQkFDSixDQUFDOzt3Q0FBQTtnQkFHRiwyQkFBQztZQUFELENBRkEsQUFFQyxJQUFBO1lBRkQsdURBRUMsQ0FBQSIsImZpbGUiOiJteS1jb21wb25lbnQuY29tcG9uZW50LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtDb21wb25lbnR9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xuXG5AQ29tcG9uZW50KHtcbiAgICBzZWxlY3RvcjogJ215LWNvbXBvbmVudCcsXG4gICAgdGVtcGxhdGU6IGBcbiAgICAgICAgSGkgSSdtIHt7bmFtZX19IGFuZCB0aGlzIGlzIG15IHZlcnkgZmlyc3QgQW5ndWxhciAyIGNvbXBvbmVudCEgSXQncyBzbyBhd2Vzb21lIVxuICAgICAgICA8YnI+XG4gICAgICAgIDxicj5cbiAgICAgICAgSXMgaXQgYXdlc29tZT9cbiAgICAgICAgPGlucHV0IHR5cGU9XCJ0ZXh0XCI+XG4gICAgYFxufSlcbmV4cG9ydCBjbGFzcyBNeUNvbXBvbmVudENvbXBvbmVudCAgIHtcbiAgICBuYW1lOiAnTWF0dCc7XG59Il0sInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm15LWNvbXBvbmVudC5jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7WUFhQTtnQkFBQTtnQkFFQSxDQUFDO2dCQWJEO29CQUFDLGdCQUFTLENBQUM7d0JBQ1AsUUFBUSxFQUFFLGNBQWM7d0JBQ3hCLFFBQVEsRUFBRSxpUkFNVDt3QkFDRCxTQUFTLEVBQUUsQ0FBQyx5QkFBeUIsQ0FBQztxQkFDekMsQ0FBQzs7d0NBQUE7Z0JBR0YsMkJBQUM7WUFBRCxDQUZBLEFBRUMsSUFBQTtZQUZELHVEQUVDLENBQUEiLCJmaWxlIjoibXktY29tcG9uZW50LmNvbXBvbmVudC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7Q29tcG9uZW50fSBmcm9tICdAYW5ndWxhci9jb3JlJztcblxuQENvbXBvbmVudCh7XG4gICAgc2VsZWN0b3I6ICdteS1jb21wb25lbnQnLFxuICAgIHRlbXBsYXRlOiBgXG4gICAgICAgIEhpIEknbSB7e25hbWV9fSBhbmQgdGhpcyBpcyBteSB2ZXJ5IGZpcnN0IEFuZ3VsYXIgMiBjb21wb25lbnQhIDxzcGFuIFtjbGFzcy5pcy1hd2Vzb21lXT1cImlucHV0RWxlbWVudC52YWx1ZSA9PT0gJ3llcydcIj5JdCdzIHNvIGF3ZXNvbWUhPC9zcGFuPlxuICAgICAgICA8YnI+XG4gICAgICAgIDxicj5cbiAgICAgICAgSXMgaXQgYXdlc29tZT9cbiAgICAgICAgPGlucHV0IHR5cGU9XCJ0ZXh0XCIgI2lucHV0RWxlbWVudCAoa2V5dXApPVwiMFwiPlxuICAgIGAsXG4gICAgc3R5bGVVcmxzOiBbJ3NyYy9jc3MvbXljb21wb25lbnQuY3NzJ11cbn0pXG5leHBvcnQgY2xhc3MgTXlDb21wb25lbnRDb21wb25lbnQgICB7XG4gICAgbmFtZTogJ01hdHQnO1xufSJdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ==
