@@ -8,9 +8,11 @@ import {Component} from '@angular/core';
         <br>
         Is it awesome?
         <input type="text" #inputElement (keyup)="0">
+        <br><br>
+        <button>Only enabled if 'yes' was entered</button>
     `,
     styleUrls: ['src/css/mycomponent.css']
 })
 export class MyComponentComponent   {
-    name: 'Matt';
+    name = 'Matt';
 }
