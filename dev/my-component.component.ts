@@ -9,7 +9,7 @@ import {Component} from '@angular/core';
         Is it awesome?
         <input type="text" #inputElement (keyup)="0">
         <br><br>
-        <button>Only enabled if 'yes' was entered</button>
+        <button [disabled]="inputElement.value !== 'yes'">Only enabled if 'yes' was entered</button>
     `,
     styleUrls: ['src/css/mycomponent.css']
 })
