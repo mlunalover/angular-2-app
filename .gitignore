@@ -27,3 +27,4 @@ dist
 dist.zip
 deploy/*.tar
 deploy/*.tar.gz
+app
